@@ -1,0 +1,254 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Estilos para a logo */
+.logo {
+    display: flex;
+    align-items: center;
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.highlighted-text {
+    color: #66CCFF; /* Cor diferente para a parte destacada */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon-bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    height: 300px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    position: absolute;
+    bottom: 50%;
+    left: 50px;
+    color: white;
+    background: #66CCFF;
+    padding: 5px;
+  color:#fff;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+/* Home Section */
+#home {
+    padding: 20px;
+    text-align: center;
+}
+
+#home h1 {
+    color: #003366;
+}
+
+/* Sobre Section */
+#home-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+}
+
+.sobre-imagem {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.ver-mais {
+    display: block;
+    margin-top: 10px;
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ver-mais:hover {
+    text-decoration: underline;
+}
+
+#contato{
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  
+  }
+
+#contato form{
+  
+}
+#contato form button{
+  background: red;
+  padding: 10px;
+  color:#fff;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* Serviços Section */
+#servicos {
+    padding: 20px;
+    text-align: center;
+}
+
+.service {
+    display: inline-block;
+    margin: 10px;
+}
+
+.service img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+span{
+  color:orange;
+}
+.footer-content h3{
+  color: #66CCFF; 
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 10px;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+      
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list a {
+        padding: 5px;
+        background-color: #004080;
+        border-bottom: 1px solid white;
+    }
+  .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .nav-list li a {
+        font-size: 15px;
+    }
+
+    .nav-list a:hover {
+        background-color: #0059b3;
+    }
+
+    #home-sobre {
+        flex-direction: column;
+    }
+
+    .sobre-imagem {
+        margin: 0 0 10px 0;
+    }
+}
